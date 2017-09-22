@@ -16,16 +16,16 @@ let morgan = require("morgan");
 app.use(morgan('dev'));
 
 // Mongo Database
-let mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost/usersSchema');
-let UserSchema = new mongoose.Schema({
-    first_name: { type: String, require: true },
-    last_name: { type: String, require: true },
-    email: { type: String, require: true },
-    editable: { type: Boolean, require: true }
-})
-mongoose.model("User", UserSchema);
-let User = mongoose.model("User");
+// let mongoose = require("mongoose");
+// mongoose.connect('mongodb://localhost/usersSchema');
+// let UserSchema = new mongoose.Schema({
+//     first_name: { type: String, require: true },
+//     last_name: { type: String, require: true },
+//     email: { type: String, require: true },
+//     editable: { type: Boolean, require: true }
+// })
+// mongoose.model("User", UserSchema);
+// let User = mongoose.model("User");
 
 
 
